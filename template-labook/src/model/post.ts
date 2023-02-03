@@ -7,13 +7,13 @@ export type post = {
   id: string,
   photo: string,
   description: string,
-  type: POST_TYPES,
-  createdAt: Date
+  type: "Evento" | "Normal"
+  author_id: string
 }
 
 export interface PostInputDTO {
   photo: string,
   description: string,
   type: POST_TYPES,
-  createdAt: Date,
+  author_id: string 
 }

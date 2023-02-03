@@ -8,6 +8,6 @@ const postController = new PostController()
 
 
 postRouter.post('/post', postController.post)
-// userRouter.post('/posts/:id', postController.login )
+postRouter.get('/:id', postController.getPostById )
 
 
