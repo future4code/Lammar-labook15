@@ -1,3 +1,4 @@
+### ENDPONTS USER
 
 POST http://localhost:3003/user/signup
 Content-Type: application/json
@@ -10,15 +11,25 @@ Content-Type: application/json
 
 ###
 
+### ENDPONTS POST
+
 
 POST http://localhost:3003/post/post
 Content-Type: application/json
 
 {
-   "photo": "Foto_Perfil",
-   "description": "Olá ",
-   "type": "Normal",
-   "createdAt": "20230202"
+   "author_id": "5b4ae49b-c110-4ec8-843a-4016940c133f",
+   "description": "Olá rede! Olhem esta beleza de foto do meu fds na praia de Cabo Branco, em João Pessoa - PB",
+   "photo": "Foto_praia.png",
+   "type": "Normal"
 }
 ###
+
+GET http://localhost:3003/post/:id
+Content-Type: application/json
+
+{
+   "id": "180e392a-bed1-4b48-9e54-2f57227235f9"
+
+}
 

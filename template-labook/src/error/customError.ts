@@ -53,6 +53,30 @@ export class InvalidDescription extends CustomError{
 
 export class InvalidPhoto extends CustomError{ 
     constructor(){
-        super(400, `Foto inválida, a foto precisa ser no formato "jpeg" ou "png"`)
+        super(400, `Foto inválida, a foto precisa ser no formato "jpg" ou "png"`)
+    }
+}
+
+export class InvalidType extends CustomError{ 
+    constructor(){
+        super(400, `Tipo inválido, deverá informar se é um post de "Evento" ou "Normal"`)
+    }
+}
+
+export class InvalidDate extends CustomError{ 
+    constructor(){
+        super(400, `Tipo inválido, deverá informar a data no formato "ano/mês/dia"`)
+    }
+}
+
+export class NotAuthor extends CustomError{
+    constructor(){
+        super(400, "Favor inserir a identificação do autor")
+    }
+}
+
+export class NotId extends CustomError{
+    constructor(){
+        super(400, "Favor inserir o id do post")
     }
 }
