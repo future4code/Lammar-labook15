@@ -1,0 +1,24 @@
+
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+   "name": "Leandro Lima",   
+   "email": "leandro@email.com",
+   "password": "labook16"
+}
+
+###
+
+
+POST http://localhost:3003/post/post
+Content-Type: application/json
+
+{
+   "photo": "Foto_Perfil",
+   "description": "Olá ",
+   "type": "Normal",
+   "createdAt": "20230202"
+}
+###
+
